@@ -1,0 +1,354 @@
+/* Main Styles */
+
+body {
+    font-family: "Poppins", Helvetica, sans-serif;
+    background-color: #fcf8f1;
+    color: #1b1b1b;
+    margin: 0;
+    font-weight: light;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1{
+    font-family: "Photograph Signature", Helvetica, sans-serif;
+    font-size: 7rem;
+}
+
+h2{
+    letter-spacing: 0.15em;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+/* Nav Styles Learned from Udemy https://www.youtube.com/watch?v=5bMdjkfvONE */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.left-side {
+    margin-left: 2rem;
+}
+
+.brand a {
+    font-family: "Photograph Signature", Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #1b1b1b;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.brand a:hover, .brand a:focus {
+    color: #c57171;
+}
+
+.right-side {
+    display: flex;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 2rem;
+}
+
+.nav-link-wrapper {
+    height: 1.5rem;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s ease-in;
+    font-size: 0.9rem;
+}
+
+.nav-link-wrapper:hover, .nav-link-wrapper:focus{
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.nav-link-wrapper a:hover, .nav-link-wrapper a:focus{
+    color: black;
+}
+
+@media (max-width: 22rem) {
+    
+    .left-side {
+        margin-left: 0.5rem;
+    }
+    
+    .brand a {
+        font-size: 1rem;
+    }
+
+    .nav-wrapper > .right-side > div {
+        margin-right: 0.5rem;
+    }
+    
+    .nav-link-wrapper a {
+        font-size: 0.8rem;
+    }
+   
+}
+  
+@media (max-width: 67.5rem) {
+
+    #logo{
+        height: 5rem;
+        width: auto;
+    }
+   
+}
+
+@media (max-width: 48.75rem) {
+
+    #logo{
+        height: 3rem;
+        width: auto;
+    }
+   
+}
+
+@media (max-width: 30rem) {
+
+    #logo{
+        height: 2rem;
+        width: auto;
+    }
+   
+}
+
+.continue-button{
+    margin: 2rem;
+    text-align: center;
+}
+
+
+/* Second Page Attributes */
+
+
+.title-text{
+    margin-left: 7rem;
+    margin-top: 8rem;
+}
+.subtitle-text{
+    margin-top: -5rem;
+    margin-left: 7rem;
+
+}
+
+.subtitle-text h2{
+    margin-right: 30rem;
+}
+
+.intro-project{
+    margin: 3rem 2rem 2rem 7rem;
+}
+
+.intro-project h2{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+@media (max-width: 68.125rem) {
+
+     .subtitle-text h2{
+         font-size: 1rem;
+         margin-right: 12rem;
+     }
+ }
+
+
+@media (max-width: 57.5rem) {
+
+   .title-text h1{
+    font-size: 5rem;
+    }
+    .subtitle-text h2{
+        font-size: 1rem;
+        margin-right: 5rem;
+    }
+    .subtitle-text{
+        margin-top: -3rem;
+      
+    }
+    .intro-project{
+        margin: 3rem 2rem 2rem 7rem;
+    }
+}
+
+@media (max-width: 43.75rem) {
+
+    .title-text{
+        margin-left: 3rem;
+        margin-top: 4rem;
+    }
+
+    .subtitle-text{
+        margin-left: 3rem;
+    }
+
+    .title-text h1{
+        font-size: 4rem;
+    }
+
+    .subtitle-text h2{
+        margin-top: 3rem;
+        font-size: 0.8rem;
+        margin-right: 3rem;
+    }
+
+    .intro-project{
+        margin: 3rem 2rem 2rem 3rem;
+    }
+
+
+ }
+
+ @media (max-width: 21.875rem) {
+
+    .title-text{
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .title-text h1{
+        font-size: 3.5rem;
+    }
+
+    .subtitle-text h2{
+        margin-left: -1rem;
+        margin-top: 3rem;
+       font-size: 0.7rem;
+       margin-right: 1rem;
+    }
+
+
+    .intro-project{
+        margin: 2rem;
+    }
+
+ }
+
+ /* Projects Detail in Main Page */
+
+ .project-showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+ }
+
+ .project-showcase img{
+    width: 70%;
+    margin-left: 4.5rem;
+    border-radius: 1rem;
+ }
+
+
+ .about-project{
+     color: black;
+     text-decoration: none;
+ }
+
+ .about-project h2{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.about-project h3{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-top: -1rem;
+}
+
+@media (max-width: 45rem) {
+
+    .about-project h2{
+        font-size: 0.9rem;
+    }
+    
+    .about-project h3{
+        font-size: 0.8rem;
+        margin-top: -0.4rem;
+    }
+
+    .about-project p{
+        font-size: 0.75rem;
+    }
+
+}
+
+@media (max-width: 43.75rem) {
+
+    .project-showcase img{
+        margin-left: 1.5rem;
+    }
+
+}
+
+@media (max-width: 33.75rem) {
+
+    .project-showcase{
+        margin: 1rem;
+    }
+
+    .project-showcase img{
+        border-radius: 0.7rem;
+     }
+
+    .about-project h2{
+         font-size: 0.8rem;
+    }
+
+    .about-project h3{
+        font-size: 0.7rem;
+        margin-top: -0.3rem;
+    }
+
+    .about-project p{
+        font-size: 0.65rem;
+    }
+
+}
+
+@media (max-width: 26.675rem) {
+
+    .project-showcase{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem;
+     }
+
+}
+
+@media (max-width: 21.875rem) {
+
+    .project-showcase img{
+        margin: 0rem;
+    }
+
+}
+
+
+
+/* footer */
+.below{
+   text-align: center;
+   margin: 1rem;
+}
+
+/* Citations */
+.citations{
+    margin: 2rem;
+}
+
+.citations p{
+    font-size: 0.8rem;
+}
